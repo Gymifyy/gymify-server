@@ -1,26 +1,37 @@
 {
-  "name": "express-api-starter-ts",
-  "version": "1.2.0",
-  "description": " A basic starter for an express.js API with Typescript",
+  "name": "gymify",
+  "version": "0.0.1",
+  "description": "Gymify App Backend Server containing all the endpoints for the App",
   "main": "src/index.ts",
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "dev": "nodemon src/index.ts",
+    "start": "ts-node src/app.ts",
+    "dev": "nodemon src/app.ts",
     "build": "tsc",
     "start:dist": "node dist/src/index.js",
     "lint": "eslint --fix src test",
     "test": "jest",
     "typecheck": "tsc --noEmit"
   },
-  "keywords": [],
-  "author": "CJ R. <cj@null.computer> (https://w3cj.now.sh)",
+  "keywords": [
+    "gymify",
+    "gym",
+    "management",
+    "useful",
+    "typescript",
+    "express",
+    "api"
+  ],
+  "author": "Gymify",
   "repository": {
     "type": "git",
-    "url": "https://github.com/w3cj/express-api-starter.git"
+    "url": "https://github.com/Gymifyy/gymify-server"
   },
   "license": "MIT",
   "dependencies": {
     "@supabase/supabase-js": "^2.42.5",
+    "@vercel/analytics": "^1.2.2",
+    "@vercel/speed-insights": "^1.0.10",
+    "@vercel/static-build": "^2.5.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
